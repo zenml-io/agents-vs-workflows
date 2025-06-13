@@ -385,7 +385,7 @@ def advance_question():
         st.session_state.current_question += 1
     else:
         st.session_state.quiz_completed = True
-    st.rerun()
+    # st.rerun() # This is now a no-op because the on_click handler triggers a rerun.
 
 def show_final_results():
     st.markdown("## 🎉 Quiz Complete!")
