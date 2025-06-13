@@ -91,6 +91,21 @@ streamlit run app.py
 - Quiz data is stored in `QUIZ_DATA` in `app.py`
 - Styling is defined in the custom CSS section of `app.py`
 
+## Visualizing Results
+
+This repository includes a separate dashboard to visualize the aggregated results from the Google Sheet.
+
+1.  **Install development dependencies:**
+    ```bash
+    pip install -r requirements-dev.txt
+    ```
+
+2.  **Run the visualization app:**
+    Make sure your `.streamlit/secrets.toml` file is configured correctly.
+    ```bash
+    streamlit run visualize.py
+    ```
+
 ## Security Note
 
 Never commit `.streamlit/secrets.toml` to version control. This file contains sensitive credentials that should be kept private. For Streamlit Cloud deployment, add the secrets through the dashboard instead.

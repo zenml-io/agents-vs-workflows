@@ -1,0 +1,2 @@
+# Additional packages for running the visualization dashboard
+plotly 
